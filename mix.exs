@@ -34,7 +34,8 @@ defmodule Test.MixProject do
   defp deps do
     [
       {:phoenix, "~> 1.5.10"},
-      {:phoenix_ecto, "~> 4.1"},
+      {:phoenix_ecto, "~> 4.1",
+       git: "https://github.com/phoenixframework/phoenix_ecto.git", override: true},
       {:ecto_sql, "~> 3.4"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.11"},
