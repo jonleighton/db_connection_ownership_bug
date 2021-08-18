@@ -17,7 +17,11 @@ config :test, Test.Repo,
 # you can enable the server option below.
 config :test, TestWeb.Endpoint,
   http: [port: 4002],
-  server: false
+  server: true
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+config :wallaby, otp_app: :test
+
+config :test, sql_sandbox: true
